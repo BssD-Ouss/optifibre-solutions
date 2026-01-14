@@ -164,39 +164,38 @@ section.alt {
   min-height: 260px;
 }
 
-card {
+.card {
   background: #ffffff;
-  padding: 34px;
-  border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid var(--secondary);
+  padding: 28px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
-}
-
 .card h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 12px;
   color: var(--primary);
 }
 
-.price {
-  margin-top: 25px;
-  padding-top: 15px;
-  border-top: 1px solid #e5e7eb;
+.card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
 
+/* Prix fixé en bas, centré */
+.price {
+  margin-top: 24px;
+  padding-top: 14px;
+  border-top: 1px dashed #d1d5db;
   text-align: center;
   font-weight: 700;
-  font-size: 1.05rem;
-  color: var(--secondary);
+  font-size: 1rem;
+  color: var(--dark);
 }
+
 
 /* =====================
    CONTACT
