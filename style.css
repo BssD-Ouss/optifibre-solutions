@@ -161,12 +161,16 @@ section.alt {
   gap: 32px;
 }
 
-.card {
+card {
   background: #ffffff;
   padding: 34px;
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card:hover {
@@ -181,7 +185,11 @@ section.alt {
 }
 
 .price {
-  margin-top: 16px;
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #e5e7eb;
+
+  text-align: center;
   font-weight: 700;
   font-size: 1.05rem;
   color: var(--secondary);
