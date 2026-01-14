@@ -156,45 +156,43 @@ section.alt {
 ===================== */
 .services,
 .steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 32px;
+   display: block;
 }
-.services .card {
-  min-height: 260px;
-}
+/* ===== SERVICES – STYLE SOBRE ===== */
 
 .card {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-left: 4px solid var(--secondary);
-  padding: 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background: transparent;
+  border: none;
+  padding: 0 0 28px 0;
+  margin-bottom: 28px;
+  display: block;
+}
+
+.services .card:not(:last-child),
+.steps .card:not(:last-child) {
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 12px;
+  font-size: 1.15rem;
+  font-weight: 700;
   color: var(--primary);
+  margin-bottom: 6px;
 }
 
 .card p {
   color: var(--muted);
   font-size: 0.95rem;
+  max-width: 700px;
 }
 
-/* Prix fixé en bas, centré */
 .price {
-  margin-top: 24px;
-  padding-top: 14px;
-  border-top: 1px dashed #d1d5db;
-  text-align: center;
-  font-weight: 700;
-  font-size: 1rem;
+  margin-top: 8px;
+  font-weight: 600;
   color: var(--dark);
+  font-size: 0.95rem;
 }
+
 
 
 /* =====================
