@@ -160,6 +160,9 @@ section.alt {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 32px;
 }
+.services .card {
+  min-height: 260px;
+}
 
 card {
   background: #ffffff;
