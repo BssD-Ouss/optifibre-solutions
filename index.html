@@ -4,10 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OptiFibre Solutions | Fibre & Réseau à Lille</title>
-  <meta name="description" content="OptiFibre Solutions : aménagement, maintenance et optimisation fibre optique et réseau pour particuliers et professionnels à Lille et métropole." />
+  <meta name="description" content="OptiFibre Solutions : aménagement, maintenance et optimisation fibre optique et réseau à Lille et métropole." />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="nav-container">
     <div class="logo">OptiFibre Solutions</div>
@@ -18,7 +21,7 @@
       <span></span>
     </div>
 
-    <ul class="nav-links" id="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li><a href="#services">Services</a></li>
       <li><a href="#process">Fonctionnement</a></li>
       <li><a href="#why">Pourquoi nous</a></li>
@@ -27,97 +30,111 @@
   </div>
 </nav>
 
+<!-- HERO -->
 <header>
   <h1>OptiFibre Solutions</h1>
-  <p>Aménagement, maintenance et optimisation fibre optique & réseau<br />Pour particuliers et professionnels à Lille et Métropole</p>
+  <p>
+    Aménagement, maintenance et optimisation fibre optique & réseau<br>
+    Particuliers et professionnels – Lille & Métropole
+  </p>
   <a href="#contact" class="btn">Demander un devis</a>
 </header>
 
+<!-- SERVICES -->
 <section id="services">
   <div class="section-title">
     <h2>Nos services</h2>
-    <p>Des solutions professionnelles, rapides et adaptées à vos besoins</p>
+    <p>Des interventions claires, propres et professionnelles</p>
   </div>
 
   <div class="services">
     <div class="card">
-      <h3>🔧 Dépannage fibre</h3>
-      <p>Fibre cassée, débranchée ou endommagée (animaux, meubles, aspirateur).</p>
+      <h3>Dépannage fibre</h3>
+      <p>Fibre cassée, débranchée ou endommagée à l’intérieur du logement.</p>
       <div class="price">À partir de 59 €</div>
     </div>
 
     <div class="card">
-      <h3>🔁 Rallonge & optimisation</h3>
-      <p>Déplacement de box, rallonge fibre et passage discret.</p>
+      <h3>Rallonge & optimisation</h3>
+      <p>Déplacement de box, rallonge fibre et cheminement discret.</p>
       <div class="price">À partir de 89 €</div>
     </div>
 
     <div class="card">
-      <h3>🧱 Déplacement PTO</h3>
-      <p>Aménagement de la PTO sur la partie privative, propre et fonctionnel.</p>
+      <h3>Déplacement PTO</h3>
+      <p>Modification de l’emplacement PTO sur la partie privative.</p>
       <div class="price">À partir de 99 €</div>
     </div>
 
     <div class="card">
-      <h3>📶 Installation WiFi</h3>
-      <p>Branchement box, routeur, WiFi mesh et optimisation couverture.</p>
+      <h3>Installation WiFi</h3>
+      <p>Installation box, routeur, WiFi mesh et optimisation couverture.</p>
       <div class="price">69 €</div>
     </div>
   </div>
 </section>
 
+<!-- PROCESS -->
 <section id="process" class="alt">
   <div class="section-title">
-    <h2>Comment ça marche ?</h2>
+    <h2>Comment ça marche</h2>
   </div>
 
   <div class="steps">
-    <div class="card">Contact & description du besoin</div>
+    <div class="card">Contact et description du besoin</div>
     <div class="card">Envoi de photos si nécessaire</div>
-    <div class="card">Proposition de créneau rapide</div>
+    <div class="card">Proposition d’un créneau rapide</div>
     <div class="card">Intervention professionnelle</div>
   </div>
 </section>
 
+<!-- WHY -->
 <section id="why">
   <div class="section-title">
-    <h2>Pourquoi nous choisir ?</h2>
+    <h2>Pourquoi choisir OptiFibre Solutions</h2>
   </div>
 
   <div class="services">
     <div class="card">Spécialiste fibre & réseau</div>
+    <div class="card">Intervention rapide et flexible</div>
     <div class="card">Moins cher que les opérateurs</div>
-    <div class="card">Intervention rapide</div>
     <div class="card">Travail propre et sérieux</div>
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="alt">
   <div class="section-title">
     <h2>Contact & devis</h2>
     <p>Lille & Métropole Européenne</p>
   </div>
 
-  <div class="card contact-box">
+  <div class="contact-box">
     <p><strong>Téléphone :</strong> à renseigner</p>
     <p><strong>Email :</strong> à renseigner</p>
-    <p>Intervention sur la partie privative après PTO.<br />Entreprise indépendante, non affiliée aux opérateurs.</p>
+    <p>
+      Intervention sur la partie privative après PTO.<br>
+      Entreprise indépendante, non affiliée aux opérateurs.
+    </p>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p>© OptiFibre Solutions – Lille & Métropole</p>
-  <p>Aménagement & optimisation fibre et réseau</p>
 </footer>
+
+<!-- JS MENU -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const burger = document.getElementById("burger");
-    const navLinks = document.getElementById("nav-links");
+    const navLinks = document.getElementById("navLinks");
 
     burger.addEventListener("click", function () {
       navLinks.classList.toggle("active");
     });
   });
 </script>
+
 </body>
 </html>
