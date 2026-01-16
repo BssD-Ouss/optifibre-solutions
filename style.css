@@ -1,6 +1,6 @@
-/* =====================================================
-   VARIABLES & BASE
-===================================================== */
+/* =========================
+   BASE
+========================= */
 :root {
   --primary: #0c2540;
   --secondary: #1f6aa5;
@@ -13,24 +13,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
 body {
   background: var(--light);
   color: var(--dark);
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
-/* =====================================================
+/* =========================
    NAVBAR
-===================================================== */
+========================= */
 .navbar {
-  background: #ffffff;
+  background: #fff;
   border-bottom: 1px solid #e5e7eb;
   position: sticky;
   top: 0;
-  z-index: 1000;
 }
 
 .nav-container {
@@ -56,43 +55,32 @@ body {
 .nav-links a {
   text-decoration: none;
   color: var(--dark);
-  font-weight: 500;
 }
 
 .nav-btn {
   background: var(--secondary);
-  color: #ffffff !important;
+  color: #fff !important;
   padding: 8px 14px;
   border-radius: 6px;
 }
 
-/* Burger */
 .burger {
   display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
 }
 
-.burger span {
-  width: 24px;
-  height: 3px;
-  background: var(--primary);
-}
-
-/* =====================================================
+/* =========================
    HERO
-===================================================== */
+========================= */
 header {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: #ffffff;
-  padding: 100px 20px;
+  color: #fff;
   text-align: center;
+  padding: 90px 20px;
 }
 
 header h1 {
-  font-size: 2.6rem;
-  margin-bottom: 16px;
+  font-size: 2.5rem;
+  margin-bottom: 12px;
 }
 
 header p {
@@ -102,74 +90,70 @@ header p {
 
 .btn {
   display: inline-block;
-  margin-top: 32px;
+  margin-top: 28px;
   padding: 14px 30px;
-  background: #ffffff;
+  background: #fff;
   color: var(--primary);
   font-weight: 700;
   text-decoration: none;
   border-radius: 8px;
 }
 
-/* =====================================================
-   SECTIONS GLOBAL
-===================================================== */
+/* =========================
+   SECTIONS
+========================= */
 section {
   max-width: 1200px;
   margin: auto;
-  padding: 80px 24px;
+  padding: 70px 24px;
 }
 
 section.alt {
-  background: #ffffff;
+  background: #fff;
 }
 
 .section-title {
-  margin-bottom: 48px;
-}
-
-.section-title.center {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .section-title h2 {
   font-size: 2rem;
-  margin-bottom: 8px;
 }
 
 .section-title p {
   color: var(--muted);
 }
 
-/* =====================================================
-   SERVICES — CARDS AVEC ILLUSTRATIONS
-===================================================== */
+/* =========================
+   SERVICES (STABLE & SIMPLE)
+========================= */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 36px;
+  gap: 32px;
 }
 
-/* Card service */
 .service-card {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #e5e7eb;
   padding: 24px;
   text-align: center;
 }
 
-/* Conteneur image (clé du bon rendu) */
+/* ZONE IMAGE — FIXE */
 .image-box {
   width: 100%;
-  height: 220px;               /* ⬅️ taille idéale universelle */
+  height: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
-/* Image : jamais trop grande */
+
+/* IMAGE — JAMAIS TROP GRANDE */
 .image-box img {
-  max-width: 160px;            /* ⬅️ clé magique */
+  max-width: 160px;
   max-height: 160px;
   width: auto;
   height: auto;
@@ -177,40 +161,38 @@ section.alt {
 }
 
 .service-card h3 {
-  font-size: 1.15rem;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   color: var(--primary);
 }
 
 .service-card p {
-  font-size: 0.95rem;
   color: var(--muted);
+  font-size: 0.95rem;
 }
 
-.service-card .price {
-  margin-top: 14px;
+.price {
+  margin-top: 10px;
   font-weight: 700;
-  color: var(--dark);
 }
 
-/* =====================================================
+/* =========================
    PROCESS
-===================================================== */
-#process .steps {
+========================= */
+.steps {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
 }
 
-#process .card {
-  background: #ffffff;
+.steps .card {
+  background: #fff;
   border: 1px solid #e5e7eb;
-  padding: 24px;
+  padding: 22px;
 }
 
-/* =====================================================
+/* =========================
    WHY
-===================================================== */
+========================= */
 #why .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -223,66 +205,42 @@ section.alt {
   font-weight: 600;
 }
 
-/* =====================================================
+/* =========================
    CONTACT
-===================================================== */
+========================= */
 .contact-box {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #e5e7eb;
-  padding: 40px;
+  padding: 36px;
   max-width: 600px;
   margin: auto;
   text-align: center;
 }
 
-/* =====================================================
+/* =========================
    FOOTER
-===================================================== */
+========================= */
 footer {
   background: var(--primary);
-  color: #ffffff;
+  color: #fff;
   text-align: center;
-  padding: 40px 20px;
+  padding: 36px 20px;
 }
 
-/* =====================================================
-   RESPONSIVE
-===================================================== */
+/* =========================
+   MOBILE
+========================= */
 @media (max-width: 768px) {
-  .burger {
-    display: flex;
-  }
-
   .nav-links {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background: #ffffff;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 0;
-    gap: 20px;
     display: none;
   }
 
-  .nav-links.active {
-    display: flex;
-  }
-
-   .image-box img {
-    max-width: 160px;
-    max-height: 160px;
-  }
-}
-
-@media (min-width: 1024px) {
   .image-box {
-    height: 240px;
+    height: 200px;
   }
 
   .image-box img {
-    max-width: 180px;
-    max-height: 180px;
+    max-width: 140px;
+    max-height: 140px;
   }
 }
