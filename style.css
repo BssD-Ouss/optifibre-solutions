@@ -161,18 +161,16 @@ section.alt {
 /* Conteneur image (clé du bon rendu) */
 .image-box {
   width: 100%;
-  height: 240px; /* taille de référence */
+  height: 220px;               /* ⬅️ taille idéale universelle */
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f8fafc;
   margin-bottom: 18px;
 }
-
-/* Image toujours entière */
+/* Image : jamais trop grande */
 .image-box img {
-  max-width: 180px;   /* ⬅️ LIMITE VISUELLE */
-  max-height: 180px;
+  max-width: 160px;            /* ⬅️ clé magique */
+  max-height: 160px;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -279,13 +277,12 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  .services-grid {
-    max-width: 1000px;
-    margin: auto;
+  .image-box {
+    height: 240px;
   }
 
   .image-box img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 180px;
+    max-height: 180px;
   }
 }
