@@ -120,8 +120,8 @@
   </div>
 
   <div class="contact-box">
-    <p><strong>Téléphone :</strong> à renseigner</p>
-    <p><strong>Email :</strong> à renseigner</p>
+    <p><strong>Téléphone :</strong> 0612345678</p>
+    <p><strong>Email :</strong> contact@optifibre-solutions.fr</p>
     <p>Entreprise indépendante – Intervention après PTO</p>
   </div>
 </section>
@@ -130,6 +130,16 @@
 <footer>
   <p>© OptiFibre Solutions – Lille</p>
 </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const burger = document.getElementById("burger");
+    const navLinks = document.getElementById("navLinks");
+
+    burger.addEventListener("click", function () {
+      navLinks.classList.toggle("active");
+    });
+  });
+</script>
 
 </body>
 </html>
