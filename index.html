@@ -138,6 +138,22 @@
     </select>
 
     <textarea placeholder="Décrivez votre problème (pièce concernée, urgence, animaux, etc.)" rows="4"></textarea>
+	
+	<label class="file-label">
+  Ajouter des photos (1 à 3)
+  <input 
+    type="file" 
+    name="photos" 
+    accept="image/*" 
+    multiple 
+    class="file-input"
+  >
+</label>
+
+<p class="file-hint">
+  Photos utiles : PTO, fibre cassée, emplacement box, passage câble…
+</p>
+
 
     <button type="submit" class="btn">Envoyer la demande</button>
   </form>

@@ -242,6 +242,35 @@ footer {
   color: #ffffff;
   border: 2px solid #ffffff;
 }
+/* =========================
+   UPLOAD PHOTOS – FORMULAIRE DEVIS
+========================= */
+
+.file-label {
+  display: block;
+  padding: 14px;
+  border: 2px dashed #cbd5e1;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  color: #0c2540;
+}
+
+.file-label:hover {
+  background: #f8fafc;
+}
+
+/* Cache l’input moche */
+.file-input {
+  display: none;
+}
+
+.file-hint {
+  font-size: 0.85rem;
+  color: #64748b;
+  text-align: center;
+}
+
 
 /* Mobile */
 @media (max-width: 768px) {
