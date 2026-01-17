@@ -1,246 +1,107 @@
 /* =========================
-   BASE
+   RESET TOTAL
 ========================= */
-:root {
-  --primary: #0c2540;
-  --secondary: #1f6aa5;
-  --light: #f4f7fb;
-  --dark: #0f172a;
-  --muted: #64748b;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, sans-serif;
 }
 
+img {
+  display: block;
+}
+
+/* =========================
+   BASE
+========================= */
 body {
-  background: var(--light);
-  color: var(--dark);
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #111;
 }
 
-/* =========================
-   NAVBAR
-========================= */
-.navbar {
-  background: #fff;
-  border-bottom: 1px solid #e5e7eb;
-  position: sticky;
-  top: 0;
-}
-
-.nav-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 16px 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-weight: 700;
-  color: var(--primary);
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 24px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: var(--dark);
-}
-
-.nav-btn {
-  background: var(--secondary);
-  color: #fff !important;
-  padding: 8px 14px;
-  border-radius: 6px;
-}
-
-.burger {
-  display: none;
-}
-
-/* =========================
-   HERO
-========================= */
-header {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: #fff;
+.site-header {
   text-align: center;
-  padding: 90px 20px;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 12px;
-}
-
-header p {
-  max-width: 800px;
-  margin: auto;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 28px;
-  padding: 14px 30px;
-  background: #fff;
-  color: var(--primary);
-  font-weight: 700;
-  text-decoration: none;
-  border-radius: 8px;
+  padding: 60px 20px;
+  background: #0c2540;
+  color: white;
 }
 
 /* =========================
-   SECTIONS
+   SERVICES
 ========================= */
-section {
+#services {
   max-width: 1200px;
-  margin: auto;
-  padding: 70px 24px;
+  margin: 0 auto;
+  padding: 60px 20px;
 }
 
-section.alt {
-  background: #fff;
-}
-
-.section-title {
+#services h2 {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
-.section-title h2 {
-  font-size: 2rem;
-}
-
-.section-title p {
-  color: var(--muted);
-}
-
-/* =========================
-   SERVICES (STABLE & SIMPLE)
-========================= */
+/* GRILLE */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 32px;
+  gap: 30px;
 }
 
+/* CARD */
 .service-card {
-  background: #fff;
+  background: white;
   border: 1px solid #e5e7eb;
   padding: 24px;
   text-align: center;
 }
 
-/* ZONE IMAGE — FIXE */
+/* =========================
+   IMAGE — FIX DÉFINITIF
+========================= */
 .image-box {
-  width: 180px;
-  height: 220px;
+  width: 100%;
+  height: 200px;              /* ZONE FIXE */
+  overflow: hidden;           /* BLOQUE SVG GÉANTS */
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
+  background: #f8fafc;
 }
 
-/* IMAGE — JAMAIS TROP GRANDE */
 .image-box img {
-  max-width: 160px;
-  max-height: 160px;
-  width: 100%;
-  height: 100%;
+  max-width: 140px;           /* LIMITE ABSOLUE */
+  max-height: 140px;
+  width: auto !important;
+  height: auto !important;
   object-fit: contain;
 }
 
+/* TEXTE */
 .service-card h3 {
   margin-bottom: 6px;
-  color: var(--primary);
 }
 
 .service-card p {
-  color: var(--muted);
   font-size: 0.95rem;
+  margin-bottom: 10px;
 }
 
 .price {
-  margin-top: 10px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 /* =========================
-   PROCESS
+   RESPONSIVE SIMPLE
 ========================= */
-.steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-}
-
-.steps .card {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  padding: 22px;
-}
-
-/* =========================
-   WHY
-========================= */
-#why .services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-#why .card {
-  background: #e6f0fa;
-  padding: 22px;
-  font-weight: 600;
-}
-
-/* =========================
-   CONTACT
-========================= */
-.contact-box {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  padding: 36px;
-  max-width: 600px;
-  margin: auto;
-  text-align: center;
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer {
-  background: var(--primary);
-  color: #fff;
-  text-align: center;
-  padding: 36px 20px;
-}
-
-/* =========================
-   MOBILE
-========================= */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-
+@media (min-width: 1024px) {
   .image-box {
-    height: 200px;
+    height: 220px;
   }
 
   .image-box img {
-    max-width: 140px;
-    max-height: 140px;
+    max-width: 160px;
+    max-height: 160px;
   }
 }
