@@ -33,7 +33,11 @@
 <header class="hero">
   <h1>OptiFibre Solutions</h1>
   <p>Maintenance & aménagement fibre optique<br>Lille & Métropole</p>
-  <a href="#contact" class="btn">Demander un devis</a>
+<div class="hero-buttons">
+  <a href="#devis" class="btn">Demander un devis</a>
+  <a href="tel:+33600000000" class="btn btn-outline">Besoin urgent ?</a>
+</div>
+
 </header>
 
 <!-- SERVICES -->
@@ -111,6 +115,34 @@
     <div>Travail propre et sérieux</div>
   </div>
 </section>
+
+<!-- DEVIS -->
+
+<section id="devis" class="alt">
+  <div class="section-title">
+    <h2>Demande de devis</h2>
+    <p>Décrivez votre besoin, nous vous recontactons rapidement</p>
+  </div>
+
+  <form class="devis-form">
+    <input type="text" placeholder="Nom et prénom" required>
+    <input type="tel" placeholder="Téléphone" required>
+    <input type="email" placeholder="Email">
+
+    <select required>
+      <option value="">Type d’intervention</option>
+      <option>Dépannage fibre</option>
+      <option>Rallonge / optimisation</option>
+      <option>Déplacement PTO</option>
+      <option>Installation WiFi</option>
+    </select>
+
+    <textarea placeholder="Décrivez votre problème (pièce concernée, urgence, animaux, etc.)" rows="4"></textarea>
+
+    <button type="submit" class="btn">Envoyer la demande</button>
+  </form>
+</section>
+
 
 <!-- CONTACT -->
 <section id="contact" class="alt">
