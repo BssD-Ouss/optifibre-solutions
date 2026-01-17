@@ -201,27 +201,33 @@ footer {
   background: #0c2540;
 }
 
+/* =========================
+   FORMULAIRE DEVIS – RESPONSIVE
+========================= */
+
+/* Conteneur */
 .devis-form {
+  width: 100%;
   max-width: 600px;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+  padding: 0 10px;
 }
 
+/* Champs */
 .devis-form input,
 .devis-form select,
 .devis-form textarea {
-  padding: 12px;
-  border: 1px solid #e5e7eb;
-  font-size: 1rem;
   width: 100%;
+  padding: 14px;
+  font-size: 1rem;
 }
 
+/* Bouton */
 .devis-form button {
-  margin-top: 10px;
+  width: 100%;
+  padding: 16px;
+  font-size: 1.05rem;
 }
-
 
 .hero-buttons {
   display: flex;
@@ -283,5 +289,15 @@ footer {
   .image-box img {
     max-width: 140px;
     max-height: 140px;
+  }
+  
+   .devis-form {
+    padding: 0;
+  }
+
+  .devis-form input,
+  .devis-form select,
+  .devis-form textarea {
+    font-size: 16px; /* 🔑 empêche le zoom iOS */
   }
 }
