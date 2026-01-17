@@ -184,3 +184,66 @@ footer {
     max-height: 160px;
   }
 }
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background: #0c2540;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 0;
+    display: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  header.hero h1 {
+    font-size: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps,
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Images services : toujours OK */
+  .image-box {
+    height: 180px;
+  }
+
+  .image-box img {
+    max-width: 140px;
+    max-height: 140px;
+  }
+}
